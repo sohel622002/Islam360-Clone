@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    position: relative;
+}
+.section_1{
+    min-height: 90vh;
+    width: 100%;
+    background: linear-gradient(rgb(10, 10, 42), rgb(44, 29, 92)); 
+    position: relative;  
+}
+header{
+    width: 100%;
+    min-height: 150px;
+    /* background-color: aquamarine; */
+}
+.container{
+    max-width: 80%;
+    min-height: 150px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+}
+.image_div{
+    max-width: 60px;
+    aspect-ratio: 1;
+
+}
+.image_div img{
+    width: 100%;
+    object-fit: contain;
+}
+button{
+    padding: 10px 25px;
+    border: none;
+    outline: none;
+    background-color: green;
+    font-size: 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+}
+main{
+    max-width: 80%;
+    min-height: calc(90vh - 200px);
+    /* border: 1px solid black; */
+    margin: 0 auto;
+    position: relative;
+}
+.primary_content{
+    width: 450px;
+    aspect-ratio: 1;
+    /* background-color: red; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px ;
+}
+.primary_content h1{
+    font-size: 3rem;
+    color: white;
+    padding-bottom: 10px;
+}
+.primary_content h2{
+    font-size: 2rem;
+    padding-bottom: 10px;
+    line-height: 50px;
+    color: white;
+}
+.primary_content p{
+    font-size: 1rem;
+    color: white;
+    padding-bottom: 30px;
+}
+.primary_content .buttons button{
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.primary_image{
+    width: 600px;
+    aspect-ratio: 1;
+    /* background-color: blue; */
+    position: absolute;
+    bottom: -170px;
+    right: 0;
+    object-fit: contain;
+}
+.primary_image img{
+    width: 100%;
+}
+
+
+                                                            /* ........Section_2........ */
+
+.section_2{
+    min-height: 350px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.ayat_of_day{
+    max-width: 80%;
+    /* border: 2px solid red; */
+    padding: 100px 0 50px 0px ;
+    text-align: center;
+    margin: 0 auto;
+}
+.ayat_of_day h1{
+    font-size: 2em;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+.ayat_of_day p{
+    font-size: 1.2em;
+    line-height: 2em;
+}
+
+
+                                                            /* ..........section_3.......... */
+.section_3{
+    min-height: 100vh;
+    width: 100%;
+    /* background-color: beige; */
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.section_3::before{
+    content: '';
+    height: 67vh;
+    width: 100%;
+    background-color: rgb(19, 19, 57);
+    position: absolute;
+    top: 13vh;
+
+}
+.about_div{
+    width: 300px;
+    min-height: 700px;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+.daughter_div1{
+    min-height: 400px;
+    width: 100%;
+    /* background-color: aqua; */
+    position: relative;
+    top: 50px;
+}
+.daughter_div1 h2{
+    font-size: 1.4rem;
+    padding: 20px 0 20px 0;
+    color: white;
+}
+.daughter_div1 p{
+    font-size: .86rem;
+    padding-top: 10px;
+    /* padding: 20px 0 20px 0; */
+}
+.imagediv{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    /* border: 2px dotted red; */
+    position: relative;
+}
+.imagediv img{
+    max-width: 80%;
+    object-fit: contain;
+}
+                                                            /*........section_4 ........ */
+.section_4{
+    width: 100%;
+    min-height: 600px;
+    background-color: #eee;
+    display: grid;
+    place-items: center;
+}
+.middle_div{
+    text-align: center;
+    max-width: 700px;
+    min-height: 500px;
+    /* background-color: azure; */
+}
+.middle_div h3{
+    font-size: 1rem;
+    padding: 20px 0 100px 0;
+}
+.middle_div h1{
+    font-size: 1.7rem;
+    padding-bottom: 40px;
+}
+.middle_div h4{
+    font-size: .7rem;
+    padding:70px 0 10px 0px;
+}
+.input{
+    width: 300px;
+    height: 70px;
+    background-color: grey;
+    padding: 20px 0 0 20px;
+    margin: 0 auto;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    letter-spacing: 2px;
+}
+                                                                /* All Media Queries */
+
+
+@media screen and (max-width:1024px) {
+    main{
+        height: 100vh;
+    }
+    .primary_image{
+        width: 500px;
+        bottom: -120px;
+    }
+    .section_3::before{
+        height: 184vh;
+    }
+    .daughter_div1 p{
+        color: white; 
+    }
+    .daughter_div1 .lastp{
+        color: black;
+    }
+}
+@media screen and (max-width:768px) {
+    main{
+        height: 130vh;
+    }
+    .daughter_div1 .seclastp{
+        color: black;
+    }
+}
+@media screen and (max-width:426px) {
+    main{
+        height: 120vh;
+    }
+    .primary_content{
+        max-width: 300px;
+        aspect-ratio: 1;
+    }
+    .primary_image{
+        max-width: 400px;
+        aspect-ratio: 1;
+        object-fit: contain;
+        right: -40px;
+    }
+    .primary_image img{
+        width: 100%;
+    }
+    .section_3::before{
+        height: 395vh;
+    }
+    .daughter_div1 .seclastp{
+        color: white;
+    }
+}
+@media screen and (max-width:376px) {
+    main{
+        height: 110vh;
+    }
+    .primary_content{
+        max-width: 300px;
+        aspect-ratio: 1;
+    }
+    .primary_image{
+        max-width: 300px;
+        aspect-ratio: 1;
+        object-fit: contain;
+        right: 0px;
+        bottom: -70px;
+    }
+    .primary_image img{
+        width: 100%;
+    }
+}
+@media screen and (max-width:321px) {
+    main{
+        height: 120vh;
+    }
+    .primary_content{
+        max-width: 250px;
+        aspect-ratio: 1;
+    }
+    .primary_image{
+        max-width: 300px;
+        aspect-ratio: 1;
+        object-fit: contain;
+        right: -20px;
+        bottom: -70px;
+    }
+    .primary_image img{
+        width: 100%;
+    }
+    .daughter_div1 .seclastp{
+        color: white;
+    }
+}
